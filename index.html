@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper" style="background-image: url('images/header/header-bg.jpg');">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <nav class="header-top__menu">
+              <ul class="header-top__menu-list">
+                <li class="header-top__menu-item">
+                  <a class="header-top__item-link" href="#">
+                    Shop
+                  </a>
+                </li>
+                <li class="header-top__menu-item">
+                  <a class="header-top__item-link" href="#">
+                    About us
+                  </a>
+                </li>
+                <li class="header-top__menu-item">
+                  <a class="header-top__item-link" href="#">
+                    Sustainability
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-top__link-box">
+              <a class="header-top__link" href="#">
+                <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.6227 3.65031C29.4693 3.43558 29.2239 3.31288 28.9479 3.31288H6.89264L6.24847 0.644172C6.15645 0.245399 5.81902 0 5.42025 0H1.52455C1.06442 0 0.665649 0.368098 0.665649 0.858896C0.665649 1.34969 1.06442 1.71779 1.52455 1.71779H4.7454L9.37731 20.8896C9.46933 21.2883 9.80675 21.5337 10.2055 21.5337H11.3405C10.8804 21.8712 10.543 22.4233 10.543 23.0675C10.543 24.1411 11.4018 25 12.4755 25C13.5491 25 14.408 24.1411 14.408 23.0675C14.408 22.4233 14.0706 21.9018 13.6104 21.5337H21.3712C20.911 21.8712 20.5736 22.4233 20.5736 23.0675C20.5736 24.1411 21.4325 25 22.5061 25C23.5798 25 24.4387 24.1411 24.4387 23.0675C24.4387 22.4233 24.1012 21.9018 23.6411 21.5337H24.1933C24.6534 21.5337 25.0522 21.1656 25.0522 20.6748C25.0522 20.2147 24.6534 19.816 24.1933 19.816H10.8804L10.3896 17.8221H25.8497C26.2485 17.8221 26.5859 17.546 26.6779 17.1779L29.7761 4.3865C29.8374 4.11043 29.7761 3.83436 29.6227 3.65031ZM15.4203 11.8405L15.1135 9.29448H20.0828L19.7761 11.8405H15.4203ZM19.5614 13.5583L19.2546 16.1043H15.911L15.6043 13.5583H19.5614ZM8.33436 9.29448H13.3957L13.7025 11.8405H8.94786L8.33436 9.29448ZM14.8988 7.57669L14.592 5.03067H20.5736L20.2669 7.57669H14.8988ZM12.8742 5.03067L13.181 7.57669H7.90491L7.29142 5.03067H12.8742ZM9.34663 13.5583H13.8865L14.1933 16.1043H9.96013L9.34663 13.5583ZM20.9724 16.1043L21.2791 13.5583H25.7884L25.1749 16.1043H20.9724ZM26.2178 11.8405H21.4939L21.8006 9.29448H26.8313L26.2178 11.8405ZM27.2301 7.57669H21.9847L22.2914 5.03067H27.8436L27.2301 7.57669Z" />
+                </svg>
+
+              </a>
+              <a class="header-top__link" href="#">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 0C6.27 0 0 6.27 0 14C0 17.66 1.44 21.18 4 23.8C4.33 24.13 4.67 24.44 5.03 24.74C5.39 25.05 5.76 25.33 6.16 25.59C10.89 28.8 17.11 28.8 21.84 25.59C22.24 25.33 22.61 25.05 22.97 24.74C23.33 24.44 23.67 24.13 24 23.8C29.41 18.28 29.32 9.41 23.8 4C21.18 1.44 17.66 0 14 0ZM14 26C11.07 26.01 8.25 24.94 6.06 22.99C6.62 18.6 10.63 15.5 15.01 16.06C18.63 16.52 21.47 19.37 21.94 22.99C19.75 24.94 16.93 26.01 14 26ZM11 11C11 9.34 12.34 8 14 8C15.66 8 17 9.34 17 11C17 12.66 15.66 14 14 14C12.35 14 11 12.65 11 11ZM23.6 21.2C22.71 18.16 20.43 15.72 17.45 14.62C19.45 12.71 19.52 9.55 17.62 7.55C15.72 5.55 12.55 5.48 10.55 7.38C8.55 9.28 8.48 12.45 10.38 14.45C10.43 14.51 10.49 14.56 10.55 14.62C7.57 15.72 5.29 18.16 4.4 21.2C0.42 15.9 1.5 8.38 6.8 4.4C12.1 0.42 19.62 1.5 23.6 6.8C26.8 11.07 26.8 16.93 23.6 21.2Z" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+          <a class="header-top__logo-link logo-link" href="#">
+            <img class="header-top__logo-img logo-img" src="images/header/header-logo.svg" alt="">
+          </a>
+
+        </div>
+      </div>
+
+      <div class="header-content">
+        <div class="container">
+          <h1 class="header-content__title">
+            Toothpaste, reinvented
+          </h1>
+          <p class="header-content__text">
+            The only plastic-free and clean way to replace the paste you've used your whole life.
+          </p>
+          <a class="header-content__button" href="#">
+            shop now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-press">
+      <div class="container">
+        <ul class="header-press__list">
+          <li class="header-press__list-item">
+            As seen on
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/forbes.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/oprah.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/cosmopolitan.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/people.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/buzzfeed.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/woomen's-health.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/now-this.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/insider.svg" alt="logo picture">
+            </a>
+          </li>
+          <li class="header-press__list-item">
+            <a class="header-press__item-link" href="#">
+              <img class="header-press__item-img" src="images/header/press/countryliving.svg" alt="logo picture">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="promo">
+      <div class="promo-intro">
+        <p class="promo-intro__text">
+          We make your daily routine more sustainable with products that are plastic-free, cruelty-free and made with
+          clean ingredients.
+        </p>
+        <div class="promo-intro__link-box">
+          <a class="promo-intro__link" href="#">Plastic-free</a>
+          <a class="promo-intro__link" href="#">Clean ingredients</a>
+          <a class="promo-intro__link" href="#">Cruelty-free</a>
+        </div>
+      </div>
+      <div class="promo-product">
+        <div class="container">
+          <div class="promo-product__items">
+            <div class="promo-product__main-item">
+              <p class="promo-product__item-text">
+                Meet the future of oral care.
+              </p>
+              <a class="promo-product__item-button" href="#">
+                Get started
+              </a>
+            </div>
+
+            <div class="promo-product__item" style="background-image: url('images/toothpaste.jpg');">
+              <div class="promo-product__item-content">
+                <h3 class="promo-product__item-title">
+                  Toothpaste Bits
+                </h3>
+                <p class="promo-product__item-price">
+                  From $7.50 / month
+                </p>
+              </div>
+            </div>
+            <div class="promo-product__item promo-product__item--active"
+              style="background-image: url('images/mouthwash.jpg');">
+              <div class="promo-product__item-content">
+                <h3 class="promo-product__item-title">
+                  Mouthwash Bits
+                </h3>
+                <p class="promo-product__item-price">
+                  From $5.00 / month
+                </p>
+              </div>
+            </div>
+            <div class="promo-product__item" style="background-image: url('images/whitening-gel.jpg');">
+              <div class="promo-product__item-content">
+                <h3 class="promo-product__item-title">
+                  Whitening Gel
+                </h3>
+                <p class="promo-product__item-price">
+                  From $5.00 / month
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="promo__button-inner">
+        <span></span>
+        <a class="promo__button" href="#">
+          Shop all products
+        </a>
+        <span></span>
+      </div>
+
+      <div class="container">
+
+        <div class="promo-learn">
+          <div class="promo-learn__inner">
+            <div class="promo-learn__item">
+              <div class="promo-learn__video" style="background-image: url('../images/promo-video.jpg');">
+                <a class="promo-learn__popup-video" data-fancybox href="https://www.youtube.com/watch?v=g7cdnmHX5q8">
+                  <img class="promo-learn__popup-play" src="images/icons/play-button.svg" alt="play icon">
+                </a>
+                <p class="promo-learn__text">
+                  Meet Lindsay and learn more about Bite
+                </p>
+                <a class="promo-learn__button-link" href="#">
+                  learn more
+                </a>
+              </div>
+            </div>
+            <div class="promo-learn__item item-slider">
+              <div class="promo-learn__slider">
+                <img class="promo-learn__slider-logo" src="images/slider-logo.svg" alt="logo picture">
+                <h3 class="promo-learn__slider-title">
+                  "The Most Creative People in Business 2020"
+                </h3>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="promo-bottles" style="background-image: url('images/bottles.png');">
+          <div class="promo-bottles__inner">
+            <h2 class="promo-bottles__title">
+              No plastic ever
+            </h2>
+            <p class="promo-bottles__text">We’ve delivered millions of smiles without a single plastic tube entering a
+              landfill.</p>
+            <a class="promo-bottles__button" href="#">
+              Why this matters
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-to">
+      <div class="container">
+        <div class="how-to__inner">
+          <div class="how-to__content">
+            <div class="how-to__inner-title">How to</div>
+            <h2 class="how-to__title">
+              Easy asbite, brush, smile repeat,
+            </h2>
+            <div class="how-to__text">
+              Bite down on your Bit
+              Brush with a wet toothbrush
+              Smile and watch it foam up like magic
+              Repeat twice a day, every day
+              Shop now
+            </div>
+          </div>
+          <img class="how-to__img" src="images/how-to.jpg" alt="image">
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product-top">
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/1.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Fresh Mint
+                </a>
+              </h4>
+              <num class="product-top__title-price">$30</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                Toothpaste
+              </span>
+              <num class="product-top__subtitle-price">$48</num>
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">10,368 Reviews</a>
+            </div>
+          </div>
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/2.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Mouthwash Bits
+                </a>
+              </h4>
+              <num class="product-top__title-price">$20</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                4-Month supply
+              </span>
+              <num class="product-top__subtitle-price">$24</num>
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">366 Reviews</a>
+            </div>
+          </div>
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/3.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Whitening Gel
+                </a>
+              </h4>
+              <num class="product-top__title-price">$24</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                One vial • 28 applications
+              </span>
+
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">18 Reviews</a>
+            </div>
+          </div>
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/4.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Dental Floss
+                </a>
+              </h4>
+              <num class="product-top__title-price">$12</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                Two-pack
+              </span>
+
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">257 Reviews</a>
+            </div>
+          </div>
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/5.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Bamboo Toothbrush
+                </a>
+              </h4>
+              <num class="product-top__title-price">$12</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                Two-pack
+              </span>
+
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">962 Reviews</a>
+            </div>
+          </div>
+          <div class="product-top__item">
+            <a class="product-top__item-link" href="#">
+              <img class="product-top__item-img" src="images/product/6.jpg" alt="product image">
+            </a>
+            <div class="product-top__title-box">
+              <h4 class="product-top__item-title">
+                <a class="product-top__title-link" href="#">
+                  Daily Habits Kit
+                </a>
+              </h4>
+              <num class="product-top__title-price">$60</num>
+            </div>
+            <div class="product-top__subtitle-box">
+              <span class="product-top__item-subtitle">
+                5-Piece Oral Care Set
+              </span>
+              <num class="product-top__subtitle-price">$84</num>
+            </div>
+            <div class="product-top__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-top__review" href="#">16,144 Reviews</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <div class="product-bottom__item">
+            <a class="product-bottom__item-link" href="#">
+              <img class="product-bottom__item-img" src="images/product-bottom/1.jpg" alt="product image">
+            </a>
+            <div class="product-bottom__title-box">
+              <h4 class="product-bottom__item-title">
+                <a class="product-bottom__title-link" href="#">
+                  Fresh Mint
+                </a>
+              </h4>
+              <num class="product-bottom__title-price">$12</num>
+            </div>
+            <div class="product-bottom__subtitle-box">
+              <span class="product-bottom__item-subtitle">
+                Toothpaste
+              </span>
+
+            </div>
+            <div class="product-bottom__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-bottom__review" href="#">10,368 Reviews</a>
+            </div>
+          </div>
+          <div class="product-bottom__item">
+            <a class="product-bottom__item-link" href="#">
+              <img class="product-bottom__item-img" src="images/product-bottom/2.jpg" alt="product image">
+            </a>
+            <div class="product-bottom__title-box">
+              <h4 class="product-bottom__item-title">
+                <a class="product-bottom__title-link" href="#">
+                  Mint charcoal
+                </a>
+              </h4>
+              <num class="product-bottom__title-price">$12</num>
+            </div>
+            <div class="product-bottom__subtitle-box">
+              <span class="product-bottom__item-subtitle">
+                Toothpaste
+              </span>
+
+            </div>
+            <div class="product-bottom__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-bottom__review" href="#">10,368 Reviews</a>
+            </div>
+          </div>
+          <div class="product-bottom__item">
+            <a class="product-bottom__item-link" href="#">
+              <img class="product-bottom__item-img" src="images/product-bottom/3.jpg" alt="product image">
+            </a>
+            <div class="product-bottom__title-box">
+              <h4 class="product-bottom__item-title">
+                <a class="product-bottom__title-link" href="#">
+                  Berry Twist
+                </a>
+              </h4>
+              <num class="product-bottom__title-price">$12</num>
+            </div>
+            <div class="product-bottom__subtitle-box">
+              <span class="product-bottom__item-subtitle">
+                Toothpaste
+              </span>
+
+            </div>
+            <div class="product-bottom__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-bottom__review" href="#">10,368 Reviews</a>
+            </div>
+          </div>
+          <div class="product-bottom__item">
+            <a class="product-bottom__item-link" href="#">
+              <img class="product-bottom__item-img" src="images/product-bottom/4.jpg" alt="product image">
+            </a>
+            <div class="product-bottom__title-box">
+              <h4 class="product-bottom__item-title">
+                <a class="product-bottom__title-link" href="#">
+                  The Duo
+                </a>
+              </h4>
+              <num class="product-bottom__title-price">$20</num>
+            </div>
+            <div class="product-bottom__subtitle-box">
+              <span class="product-bottom__item-subtitle">
+                Toothpaste
+              </span>
+
+            </div>
+            <div class="product-bottom__item-inner">
+              <span class="rateyo"></span>
+              <a class="product-bottom__review" href="#">10,368 Reviews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <div class="subscription__inner">
+          <p class="subscription__slogan">
+            Better for your wallet, better for our planet
+          </p>
+          <p class="subscription__text">
+            Our subscription is the most eco-friendly and affordable way to kick the tube.
+          </p>
+          <a class="subscription__button" href="#">
+            Get started
+          </a>
+          <span class="subscription__price">
+            Save 38% — starting from $7.50 per month
+          </span>
+        </div>
+        <div class="subscription__promo">
+          <div class="subscription__promo-item">
+            <img class="subscription__promo-img" src="images/flavor.svg" alt="picture">
+            <h4 class="subscription__promo-title">
+              Choose your flavor
+            </h4>
+            <p class="subscription__promo-description">
+              Choose from Fresh Mint or Activated Charcoal with Fresh Mint.
+            </p>
+          </div>
+          <div class="subscription__promo-item">
+            <img class="subscription__promo-img" src="images/refill.svg" alt="picture">
+            <h4 class="subscription__promo-title">
+              Get a refill every 4 months
+            </h4>
+            <p class="subscription__promo-description">
+              We send you fresh Bits every 4 months so you never run out of bits.
+            </p>
+          </div>
+          <div class="subscription__promo-item">
+            <img class="subscription__promo-img" src="images/pause.svg" alt="picture">
+            <h4 class="subscription__promo-title">
+              Pause or cancel anytime
+            </h4>
+            <p class="subscription__promo-description">
+              Going on vacation? You can adjust, postpone, or cancel your subscription at any time, hassle-free.
+            </p>
+          </div>
+        </div>
+        <div class="subscription__ecology">
+          <div class="subscription__ecology-inner">
+            <h2 class="subscription__ecology-title">
+              One billion toothpaste tubes are thrown out each year
+            </h2>
+            <p class="subscription__ecology-text">
+              We want to end this plastic waste, give you a healthier smile, and build the world's most sustainable oral
+              care company.
+            </p>
+            <a class="subscription__ecology-link" href="#">
+              Sustainability at Bite
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__item">
+            <div class="reviews-content">
+              <h2 class="reviews-content__title">
+                Hey. You make us smile, too!
+              </h2>
+              <p class="reviews-content__text">
+                We believe in oral care products that are better for you, and the planet. Every product we make is
+                thoughtfully formulated to keep you smiling bright.
+              </p>
+              <a class="reviews-content__link" href="#">
+                See more reviews
+              </a>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews-slider">
+              <div class="reviews-slider__item">
+                <h5 class="reviews-slider__title">
+                  Easiest and most effective whitener I’ve tried
+                </h5>
+                <p class="reviews-slider__comment">
+                  My teeth are very prone to being yellow from medications, and the only whitening that would really do
+                  anything was Smile Sciences. This Bite..."
+                </p>
+                <span class="reviews-slider__author">Katie S.</span>
+                <span class="reviews-slider__tariff">· Whitening Gel - Subscription</span>
+              </div>
+              <div class="reviews-slider__item">
+                <h5 class="reviews-slider__title">
+                  Easiest and most effective whitener I’ve tried
+                </h5>
+                <p class="reviews-slider__comment">
+                  My teeth are very prone to being yellow from medications, and the only whitening that would really do
+                  anything was Smile Sciences. This Bite..."
+                </p>
+                <span class="reviews-slider__author">Katie S.</span>
+                <span class="reviews-slider__tariff">· Whitening Gel - Subscription</span>
+              </div>
+              <div class="reviews-slider__item">
+                <h5 class="reviews-slider__title">
+                  Easiest and most effective whitener I’ve tried
+                </h5>
+                <p class="reviews-slider__comment">
+                  My teeth are very prone to being yellow from medications, and the only whitening that would really do
+                  anything was Smile Sciences. This Bite..."
+                </p>
+                <span class="reviews-slider__author">Katie S.</span>
+                <span class="reviews-slider__tariff">· Whitening Gel - Subscription</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-box">
+      <a class="footer__logo-link logo-link" href="#">
+        <img class="logo-img" src="images/header/header-logo.svg" alt="logo">
+      </a>
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">Subscriptions</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Fresh Mint Club
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Berry Twist Club
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Fresh Mint with <br>Activated Charcoal
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">
+              Follow Us
+            </a>
+          </h4>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">Single Bottles</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Fresh Mint
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Duo
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Mint Charcoal
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Berry Twist Toothpaste Bits
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">The Essentials</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Fresh Mint Club
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Duo
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Mouthwash
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Floss, by Bite
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Brush, by Bite
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">About Us</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Who we are
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Read the reviews
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Sustainability + Packaging
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Our ingredients
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                The Good Bits (our blog)
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">Press</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Past press
+              </a>
+            </li>
+            <li class="footer-top__list-item press-item">
+              For press or media <br>inquiries, please email
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title">
+            <a class="footer-top__title-link" href="#">Need help?</a>
+
+          </h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              Check out our
+              <a class="footer-top__list-link" href="#">
+                help center
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              Need further assistance? Contact
+            </li>
+            <li class="footer-top__list-item">
+              us
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                hello@bitetoothpastebits.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copyright">
+          Copyright © 2021, <a class="footer-bottom__copyright-link" href="#">Bite</a>. <a
+            class="footer-bottom__copyright-link" href="#">Powered by Shopify</a>
+        </p>
+        <img class="footer-bottom__copyright-img" src="images/icons/footer-icon.svg" alt="icon">
+        <div class="footer-bottom__link-box">
+          <a class="footer-bottom__link" href="#">Accessibility Statement</a>
+          <a class="footer-bottom__link" href="#">Privacy policy</a>
+          <a class="footer-bottom__link" href="#">Terms of service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
