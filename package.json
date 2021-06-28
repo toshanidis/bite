@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "toshanidis.github.io/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d app"
   },
   "author": "",
   "license": "ISC",
